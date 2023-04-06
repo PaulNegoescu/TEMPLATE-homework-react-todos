@@ -36,7 +36,7 @@ Create and "Add Todo" form that has a label and and input for the title and a bu
 
 1. Don't forget to start the mock server before making requests to it!!!
 2. There is a generalized way to treat the add functionality that does not involve listening for two disparate events (enter key and click). Remember that you are in the context of a form.
-3. The API, after a successfult POST request, will send back data with the response, containing the freshly created entity.
+3. The API, after a successful POST request, will send back data with the response, containing the freshly created entity.
 4. You can add items to an array with push and remove items with splice but remember that these functions perform mutations, the reference of the array won't change.
 5. For removing items in a way that does not mutate arrays consider using .filter
 6. fetch accepts a second argument with a config object where you can specify a method for the call, headers, and a body
@@ -62,4 +62,4 @@ POST, PUT and PATCH requests respond with a body containing the affected todo it
 
 Ids are auto-generated when POSTing.
 
-To tell the server what kind of data you are sending to it use headers. I recommend `application/json` or `application/x-www-form-urlencoded`. Make sure you encode your body in a way compatible with the header. For json use `JSON.stringify` or just format the string yourself. For the other one there is a more complex api or again you can format the string yourself something like `title=Test%20of%20adding&completed=false`. Because this second aproach is harder I recommend sticking with json.
+To tell the server what kind of data you are sending to it use headers, specifically conten-type. I recommend `application/json` or `application/x-www-form-urlencoded`. Make sure you encode your body in a way compatible with the header. For json use `JSON.stringify` or just format the string yourself. For the other one there is a more complex api or again you can format the string yourself something like `title=Test%20of%20adding&completed=false`. Because this second aproach is harder I recommend sticking with json.
