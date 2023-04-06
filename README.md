@@ -28,9 +28,9 @@ Create and "Add Todo" form that has a label and and input for the title and a bu
 2. When clicking the button in the form or hitting enter when typing in the input field add a new todo item to the DB and make sure the list is updated for the user with the new Todo.
 3. When clicking the label or input, update the completed property of the todo item involved in the DB
 4. Add css that does the following:
-   a. When the item is completed (checkbox is checked) the title is striked through
-   b. There are no bullets in the list
-   c. The button looks like an x in a circle (use &amp;times; for the symbol)
+   a. When the item is completed (checkbox is checked) the title is struck through (line-through)
+   b. There are no bullets on the list
+   c. The button looks like an x in a red circle (use &amp;times; for the symbol)
 
 ## Hints and tips
 
